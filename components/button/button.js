@@ -1,0 +1,16 @@
+Component({
+  properties:{
+      size:{
+          type:String,
+          value:""
+      },
+      text:{
+          type:String,
+          value:""
+      },
+      tyep:{
+          type:String,
+          value:"defaulet"
+      }
+  }
+})
