@@ -1,9 +1,7 @@
 {
   "pages": [
+    "pages/tomato/tomato",
     "pages/home/home",
-    "components/confirm/confirm",
-    "components/clock/clock",
-    "components/button/button",
     "pages/index/index",
     "pages/logs/logs"
   ],
@@ -37,5 +35,6 @@
         "selectedIconPath": "imges/home-active.png"
       }
     ]
-  }
+  },
+  "sitemapLocation": "sitemap2.json"
 }

@@ -1,10 +1,12 @@
-<!--components/button/button.wxml-->
+<!-- components/button/button.wxml -->
 <view class="cantainer" wx:if="{{visible}}">
-    <view class="confirm" >
-        <textarea placeholder="{{placeholder}}" bindinput="watchValue" value="{{value}}"></textarea>
+    <!-- 遮罩层 -->
+    <view class="confirm">
+        <!-- 弹出输入框 -->
+        <textarea placeholder="{{placeholder}}" value="{{value}}" bindinput="watchValue"></textarea>
         <view class="actions">
             <view hover-class="active" class="sure" bindtap="confirm">确定</view>
-            <view hover-class="active" class="cancel">取消</view>
+            <view hover-class="active" class="cancel" bindtap="cancel">取消</view>
         </view>
     </view>
 </view>

@@ -1,5 +1,3 @@
-@import "../../components/button/button.wxss";
-@import "../../components/clock/clock.wxss";
 
 .home-container { 
   height: 100vh;
