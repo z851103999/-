@@ -19,6 +19,7 @@
         <t-button size="mini" type="change" text="再来一组"></t-button>
     </view>
     <!-- 放弃理由弹窗 -->
-    <t-confirm visible="{{confirmVisible}}" bindconfirm="showConfirmn" bindcancel="hideConfirm" placeholder="放弃理由"></t-confirm>
+    <t-confirm visible="{{confirmVisible}}" bindconfirm="confirmAbandon" bindcancel="hideConfirm" placeholder="放弃理由"></t-confirm>
+    <!-- 完成了什么任务 -->
     <t-confirm visible="{{finishConfirmVisible}}" bindconfirm="confirmFinish" bindcancel="confirmCancel" placeholder="完成了什么"></t-confirm>
 </view>

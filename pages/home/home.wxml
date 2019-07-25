@@ -10,9 +10,9 @@
 <!-- 按钮创建任务 -->
   <t-button class="createButton" type="change" bindtap='showConfirm' text="创建任务"></t-button>
   <view class="tomato-wrapper">
-    <view class="tomato">
+    <navigator class="tomato" url="/pages/tomato/tomato">
       <t-clock text="点击开始闹钟"></t-clock>
-    </view>
+    </navigator>
   </view>
   <!-- 弹窗创建任务 -->
   <t-confirm visible="{{visibleConfirm}}" placeholder="我完成了什么" bindconfirm="confirmCreate" bindcancel="hideConfirm"></t-confirm>
