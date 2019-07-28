@@ -1,5 +1,6 @@
-Page({
+const { http } = require('../../lib/http.js');
 
+Page({
     data: {
         defalutSecond: 1500,    //默认秒数 25分钟*60秒
         time: "",     //渲染的字符串
@@ -12,6 +13,9 @@ Page({
 
     onShow: function () {
         this.startTimer()
+        http.post('/tonato').then(response =>{
+            this.setData({tomato:response.data.resource})
+        })
     },
 
     startTimer() {
@@ -76,3 +80,29 @@ Page({
 
 });
 
+
+
+// 获取自己的todos
+// url: /todos?completed=false
+// method: get
+// 创建一个todo
+// url: /todos
+// method: post
+// params: { description: "" }
+// 更新一个todo内容
+// url: /todos/:id
+// method: put
+// data: { completed: false, description: "内容"  }
+// 删除一个todo
+
+// url: /todos/:id
+// method: put
+// params: { completed：true }
+// 创建番茄
+
+// url: /tomatoes
+// method: post
+// 更新番茄
+// url: /tomatoes/:id
+// params: { description: String, aborted: Boolean }
+// method: put

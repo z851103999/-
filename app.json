@@ -1,10 +1,11 @@
 {
   "pages": [
+    "pages/login/login",
+    "pages/binding/binding",
     "pages/me/me",
     "pages/home/home",
     "pages/tomato/tomato",
-    "pages/index/index",
-    "pages/logs/logs"
+    "pages/index/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -14,8 +15,9 @@
   },
   "taBar": {
     "color": "#515151",
-    "selectedColor": "#fff",
-    "backgroundColor": "black",
+    "selectedColor": "#F6705A",
+    "backgroundColor": "#fff",
+    "borderStyle": "black",
     "list": [
       {
         "pagePath": "pages/home/home",
@@ -24,18 +26,12 @@
         "selectedIconPath": "imges/home-active.png"
       },
       {
-        "pagePath": "pages/home/home",
-        "text": "数据统计",
-        "iconPath": "images/home-active.png",
-        "selectedIconPath": "imges/home-active.png"
-      },
-      {
-        "pagePath": "pages/home/home",
+        "pagePath": "pages/me/me",
         "text": "我的",
         "iconPath": "images/home-active.png",
         "selectedIconPath": "imges/home-active.png"
       }
     ]
   },
-  "sitemapLocation": "sitemap2.json"
+  "sitemapLocation": "sitemap56.json"
 }
