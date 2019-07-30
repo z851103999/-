@@ -29,7 +29,7 @@ Page({
     })
     .then(response => {
       this.saveMessage(response)
-      wx.reLaunch({ url: "/pages/home/home" })
+      wx.reLaunch({ url: '/pages/home/home'})
     })
   },
   saveMessage(response){

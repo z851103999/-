@@ -1,19 +1,19 @@
 {
   "pages": [
-    "pages/login/login",
-    "pages/binding/binding",
     "pages/me/me",
+    "pages/login/login",
     "pages/home/home",
+    "pages/binding/binding",
     "pages/tomato/tomato",
-    "pages/index/index"
+    "pages/test/test"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "番茄闹钟",
     "navigationBarTextStyle": "black"
   },
-  "taBar": {
+  "tabBar": {
     "color": "#515151",
     "selectedColor": "#F6705A",
     "backgroundColor": "#fff",
@@ -22,16 +22,16 @@
       {
         "pagePath": "pages/home/home",
         "text": "专注",
-        "iconPath": "images/home-active.png",
-        "selectedIconPath": "imges/home-active.png"
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home-active.png"
       },
       {
         "pagePath": "pages/me/me",
         "text": "我的",
-        "iconPath": "images/home-active.png",
-        "selectedIconPath": "imges/home-active.png"
+        "iconPath": "images/me.png",
+        "selectedIconPath": "images/me-active.png"
       }
     ]
   },
-  "sitemapLocation": "sitemap56.json"
+  "sitemapLocation": "sitemap42.json"
 }

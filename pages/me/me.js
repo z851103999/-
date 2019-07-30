@@ -1,20 +1,28 @@
 // pages/me/me.js
+const { http } = require('../../lib/http')
 Page({
   data: {
     tab: 'tomato',
-    lists: {
-      "本周四": [
-        { time: "14:00", text: "包含开发看法", id: 1 },
-        { time: "14:00", text: "包含开发看法", id: 2 },
-        { time: "14:00", text: "包含开发看法", id: 3 }
-      ],
-      "本周五":[
-        { time: "14:00", text: "包含开发看法", id: 1 }
-      ]
-    }
+    tomaoto: {},
+    todos: {},
+    me:{}
   },
   onShow: function () {
-
+    this.fetchTomatoes()
+    this.fetchTodos()
+    this.setData({me:wx.getStorageSync('me')})
+  },
+  fetchTomatoes() {
+    http.get('/tomatoes', { is_group: "yes" })
+      .then(response => {
+        this.setData({ tomatoes: response.data.resources })
+      })
+  },
+  fetchTodos() {
+    http.get('/todos', { is_group: "yes" })
+      .then(response => {
+        this.setData({ todos: response.data.resources })
+      })
   },
   changeTab(event) { //tab切换红条
     // console.log(event)
